@@ -1,40 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scan & Serve</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- JsBarcode -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+
+    <!-- QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<h1>🍴 Scan & Serve</h1>
+        <h1>🍽️ Scan & Serve</h1>
 
-<p>Scan, Learn and Serve with Love ❤️</p>
+        <p>Scan, Learn and Serve with Love ❤️</p>
 
-<input id="foodName" placeholder="Enter food name">
+        <input
+            type="text"
+            id="foodName"
+            placeholder="Enter Mango, Apple, Banana or Oreo">
 
-<button onclick="generateCode()">Generate QR & Barcode</button>
+        <br><br>
 
+        <button onclick="generateCode()">Generate QR & Barcode</button>
 
-<h2>Barcode</h2>
+        <br><br>
 
-<svg id="barcode"></svg>
+        <h2>Barcode</h2>
 
+        <svg id="barcode"></svg>
 
-<h2>QR Code</h2>
+        <br><br>
 
-<div id="qrcode"></div>
+        <h2>QR Code</h2>
 
-</div>
+        <div id="qrcode"></div>
 
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
